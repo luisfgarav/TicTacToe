@@ -157,6 +157,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -165,11 +170,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -190,6 +190,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -198,11 +203,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -224,6 +224,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -232,11 +237,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -257,6 +257,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -265,11 +270,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -290,6 +290,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -298,11 +303,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -323,6 +323,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -331,11 +336,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -356,6 +356,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -364,11 +369,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -389,6 +389,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -397,11 +402,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -422,6 +422,11 @@ public class MainActivity extends AppCompatActivity {
             }
             turnos++;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
         if(gana1()){
             ganador.setText("X");
             ganador.setTextColor(Color.parseColor("#F44336"));
@@ -430,11 +435,6 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
-            finjuego=1;
-        }
-        if(turnos==9){
-            ganador.setText("EMPATE");
-            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
