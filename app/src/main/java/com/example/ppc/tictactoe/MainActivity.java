@@ -440,14 +440,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean gana1(){
-        if((casillas1[0]==1&&casillas1[1]==1&&casillas1[2]==1)||(casillas1[3]==1&&casillas1[4]==1&&casillas1[5]==1)||(casillas1[6]==1&&casillas1[7]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[3]==1&&casillas1[6]==1)||(casillas1[1]==1&&casillas1[4]==1&&casillas1[7]==1)||(casillas1[3]==1&&casillas1[5]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[4]==1&&casillas1[8]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[6]==1)){
+        if((casillas1[0]==1&&casillas1[1]==1&&casillas1[2]==1)||(casillas1[3]==1&&casillas1[4]==1&&casillas1[5]==1)||(casillas1[6]==1&&casillas1[7]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[3]==1&&casillas1[6]==1)||(casillas1[1]==1&&casillas1[4]==1&&casillas1[7]==1)||(casillas1[2]==1&&casillas1[5]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[4]==1&&casillas1[8]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[6]==1)){
             return true;
         }else {
             return false;
         }
     }
     public boolean gana2(){
-        if((casillas2[0]==1&&casillas2[1]==1&&casillas2[2]==1)||(casillas2[3]==1&&casillas2[4]==1&&casillas2[5]==1)||(casillas2[6]==1&&casillas2[7]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[3]==1&&casillas2[6]==1)||(casillas2[1]==1&&casillas2[4]==1&&casillas2[7]==1)||(casillas2[3]==1&&casillas2[5]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[4]==1&&casillas2[8]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[6]==1)){
+        if((casillas2[0]==1&&casillas2[1]==1&&casillas2[2]==1)||(casillas2[3]==1&&casillas2[4]==1&&casillas2[5]==1)||(casillas2[6]==1&&casillas2[7]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[3]==1&&casillas2[6]==1)||(casillas2[1]==1&&casillas2[4]==1&&casillas2[7]==1)||(casillas2[2]==1&&casillas2[5]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[4]==1&&casillas2[8]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[6]==1)){
             return true;
         }else {
             return false;
