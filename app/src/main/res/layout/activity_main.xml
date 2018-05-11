@@ -15,61 +15,10 @@
             android:text="Ganador: "
             android:textSize="25dp"/>
         <TextView
+            android:id="@+id/winner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:id="@+id/Ganador"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn1"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn2"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn4"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn5"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn6"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn7"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn8"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btn9"/>
+            android:textSize="25dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -90,5 +39,71 @@
             android:text="  Azul"
             android:textSize="20dp"
             android:id="@+id/Turno"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_weight="1"
+            android:id="@+id/btn1"
+            android:textSize="60sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:textSize="60sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn3"
+            android:textSize="60sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn4"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn5"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn7"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn8"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn9"/>
     </LinearLayout>
 </LinearLayout>
