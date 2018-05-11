@@ -10,15 +10,21 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public TextView ganador,turnillo;
-    public Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9;
-    public int turno=1,finjuego=0;
+    public Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,reset;
+    public int turno=1,finjuego=0,turnos=0;
     public int casillas1[]=new int[9];
     public int casillas2[]=new int[9];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        reset=(Button)findViewById(R.id.reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Restart(view);
+            }
+        });
         bt1=(Button)findViewById(R.id.btn1);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,9 +91,55 @@ public class MainActivity extends AppCompatActivity {
         ganador=(TextView)findViewById(R.id.Winner);
         turnillo=(TextView)findViewById(R.id.Turno);
         turnillo.setText("X");
-
+        bt1.setText(" ");
+        bt1.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt2.setText(" ");
+        bt2.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt3.setText(" ");
+        bt3.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt4.setText(" ");
+        bt4.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt5.setText(" ");
+        bt5.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt6.setText(" ");
+        bt6.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt7.setText(" ");
+        bt7.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt8.setText(" ");
+        bt8.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt9.setText(" ");
+        bt9.setBackgroundColor(Color.parseColor("#9E9E9E"));
     }
 
+    public void Restart(View view){
+        ganador.setText(" ");
+        turnillo.setText(" ");
+        bt1.setText(" ");
+        bt1.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt2.setText(" ");
+        bt2.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt3.setText(" ");
+        bt3.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt4.setText(" ");
+        bt4.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt5.setText(" ");
+        bt5.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt6.setText(" ");
+        bt6.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt7.setText(" ");
+        bt7.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt8.setText(" ");
+        bt8.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        bt9.setText(" ");
+        bt9.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        turnos=0;
+        for(int i=0;i<9;i++){
+            casillas2[i]=0;
+            casillas1[i]=0;
+        }
+        finjuego=0;
+        turno=1;
+    }
     public void press1(View view){
         if(casillas1[0]!=1&&casillas2[0]!=1&&finjuego!=1) {
             if (turno == 1) {
@@ -103,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[0] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -112,6 +165,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -130,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[1] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -139,6 +198,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -158,6 +222,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[2] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -167,6 +232,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -185,6 +255,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[3] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -194,6 +265,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -212,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[4] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -221,6 +298,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -239,6 +321,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[5] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -248,6 +331,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -266,6 +354,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[6] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -275,6 +364,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -293,6 +387,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[7] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -302,6 +397,11 @@ public class MainActivity extends AppCompatActivity {
         if(gana2()){
             ganador.setText("O");
             ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
             finjuego=1;
         }
     }
@@ -320,6 +420,7 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[8] = 1;
                 turno=1;
             }
+            turnos++;
         }
         if(gana1()){
             ganador.setText("X");
@@ -331,17 +432,22 @@ public class MainActivity extends AppCompatActivity {
             ganador.setTextColor(Color.parseColor("#2196f3"));
             finjuego=1;
         }
+        if(turnos==9){
+            ganador.setText("EMPATE");
+            ganador.setTextColor(Color.parseColor("#4CAF50"));
+            finjuego=1;
+        }
     }
 
     public boolean gana1(){
-        if((casillas1[0]==1&&casillas1[1]==1&&casillas1[2]==1)||(casillas1[3]==1&&casillas1[4]==1&&casillas1[5]==1)||(casillas1[6]==1&&casillas1[7]==1&&casillas1[8]==1)||(casillas1[1]==1&&casillas1[3]==1&&casillas1[6]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[7]==1)||(casillas1[3]==1&&casillas1[5]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[4]==1&&casillas1[8]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[6]==1)){
+        if((casillas1[0]==1&&casillas1[1]==1&&casillas1[2]==1)||(casillas1[3]==1&&casillas1[4]==1&&casillas1[5]==1)||(casillas1[6]==1&&casillas1[7]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[3]==1&&casillas1[6]==1)||(casillas1[1]==1&&casillas1[4]==1&&casillas1[7]==1)||(casillas1[3]==1&&casillas1[5]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[4]==1&&casillas1[8]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[6]==1)){
             return true;
         }else {
             return false;
         }
     }
     public boolean gana2(){
-        if((casillas2[0]==1&&casillas2[1]==1&&casillas2[2]==1)||(casillas2[3]==1&&casillas2[4]==1&&casillas2[5]==1)||(casillas2[6]==1&&casillas2[7]==1&&casillas2[8]==1)||(casillas2[1]==1&&casillas2[3]==1&&casillas2[6]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[7]==1)||(casillas2[3]==1&&casillas2[5]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[4]==1&&casillas2[8]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[6]==1)){
+        if((casillas2[0]==1&&casillas2[1]==1&&casillas2[2]==1)||(casillas2[3]==1&&casillas2[4]==1&&casillas2[5]==1)||(casillas2[6]==1&&casillas2[7]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[3]==1&&casillas2[6]==1)||(casillas2[1]==1&&casillas2[4]==1&&casillas2[7]==1)||(casillas2[3]==1&&casillas2[5]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[4]==1&&casillas2[8]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[6]==1)){
             return true;
         }else {
             return false;
