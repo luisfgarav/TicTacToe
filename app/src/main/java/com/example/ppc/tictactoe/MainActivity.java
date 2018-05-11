@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     public TextView ganador,turnillo;
     public Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9;
-    public int turno=1;
+    public int turno=1,finjuego=0;
     public int casillas1[]=new int[9];
     public int casillas2[]=new int[9];
     @Override
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void press1(View view){
-        if(casillas1[0]!=1&&casillas2[0]!=1) {
+        if(casillas1[0]!=1&&casillas2[0]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt1.setText("X");
                 bt1.setBackgroundColor(Color.parseColor("#F44336"));
@@ -104,10 +104,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
-
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press2(View view){
-        if(casillas1[1]!=1&&casillas2[1]!=1) {
+        if(casillas1[1]!=1&&casillas2[1]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt2.setText("X");
                 bt2.setBackgroundColor(Color.parseColor("#F44336"));
@@ -122,10 +131,20 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
 
     public void press3(View view){
-        if(casillas1[2]!=1&&casillas2[2]!=1) {
+        if(casillas1[2]!=1&&casillas2[2]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt3.setText("X");
                 bt3.setBackgroundColor(Color.parseColor("#F44336"));
@@ -140,9 +159,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press4(View view){
-        if(casillas1[3]!=1&&casillas2[3]!=1) {
+        if(casillas1[3]!=1&&casillas2[3]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt4.setText("X");
                 bt4.setBackgroundColor(Color.parseColor("#F44336"));
@@ -157,9 +186,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press5(View view){
-        if(casillas1[4]!=1&&casillas2[4]!=1) {
+        if(casillas1[4]!=1&&casillas2[4]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt5.setText("X");
                 bt5.setBackgroundColor(Color.parseColor("#F44336"));
@@ -174,9 +213,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press6(View view){
-        if(casillas1[5]!=1&&casillas2[5]!=1) {
+        if(casillas1[5]!=1&&casillas2[5]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt6.setText("X");
                 bt6.setBackgroundColor(Color.parseColor("#F44336"));
@@ -191,9 +240,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press7(View view){
-        if(casillas1[6]!=1&&casillas2[6]!=1) {
+        if(casillas1[6]!=1&&casillas2[6]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt7.setText("X");
                 bt7.setBackgroundColor(Color.parseColor("#F44336"));
@@ -208,9 +267,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press8(View view){
-        if(casillas1[7]!=1&&casillas2[7]!=1) {
+        if(casillas1[7]!=1&&casillas2[7]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt8.setText("X");
                 bt8.setBackgroundColor(Color.parseColor("#F44336"));
@@ -225,9 +294,19 @@ public class MainActivity extends AppCompatActivity {
                 turno=1;
             }
         }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
     }
     public void press9(View view){
-        if(casillas1[8]!=1&&casillas2[8]!=1) {
+        if(casillas1[8]!=1&&casillas2[8]!=1&&finjuego!=1) {
             if (turno == 1) {
                 bt9.setText("X");
                 bt9.setBackgroundColor(Color.parseColor("#F44336"));
@@ -241,6 +320,31 @@ public class MainActivity extends AppCompatActivity {
                 casillas2[8] = 1;
                 turno=1;
             }
+        }
+        if(gana1()){
+            ganador.setText("X");
+            ganador.setTextColor(Color.parseColor("#F44336"));
+            finjuego=1;
+        }
+        if(gana2()){
+            ganador.setText("O");
+            ganador.setTextColor(Color.parseColor("#2196f3"));
+            finjuego=1;
+        }
+    }
+
+    public boolean gana1(){
+        if((casillas1[0]==1&&casillas1[1]==1&&casillas1[2]==1)||(casillas1[3]==1&&casillas1[4]==1&&casillas1[5]==1)||(casillas1[6]==1&&casillas1[7]==1&&casillas1[8]==1)||(casillas1[1]==1&&casillas1[3]==1&&casillas1[6]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[7]==1)||(casillas1[3]==1&&casillas1[5]==1&&casillas1[8]==1)||(casillas1[0]==1&&casillas1[4]==1&&casillas1[8]==1)||(casillas1[2]==1&&casillas1[4]==1&&casillas1[6]==1)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public boolean gana2(){
+        if((casillas2[0]==1&&casillas2[1]==1&&casillas2[2]==1)||(casillas2[3]==1&&casillas2[4]==1&&casillas2[5]==1)||(casillas2[6]==1&&casillas2[7]==1&&casillas2[8]==1)||(casillas2[1]==1&&casillas2[3]==1&&casillas2[6]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[7]==1)||(casillas2[3]==1&&casillas2[5]==1&&casillas2[8]==1)||(casillas2[0]==1&&casillas2[4]==1&&casillas2[8]==1)||(casillas2[2]==1&&casillas2[4]==1&&casillas2[6]==1)){
+            return true;
+        }else {
+            return false;
         }
     }
 }
